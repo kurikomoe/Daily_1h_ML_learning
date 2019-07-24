@@ -3,7 +3,7 @@
  * @Date: 2019-07-25 00:01:50
  * @github: https://github.com/sunyz
  * @LastEditors: sunyz
- * @LastEditTime: 2019-07-25 02:06:50
+ * @LastEditTime: 2019-07-25 03:20:42
  * @Description: content
  -->
 
@@ -39,7 +39,7 @@ sh ~/.vim_runtime/install_basic_vimrc.sh
 zsh作为bash的替代工具，嗯，真香， 配合oh-my-zsh使用体验极佳
 
 安利功能：
-- 简化的git命令，如gco=’git checkout’、gd=’git diff’、gst=’git status’、g=’git’等等， 完整列表见<https://github.com/robbyrussell/oh-my-zsh/wiki/Plugin:git>
+- 简化的git命令，如gco=’git checkout’、gd=’git diff’、gst=’git status’、g=’git’等等， 完整列表见<https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/git/>
 - 强大的自动补全， 输入首字母单词即可匹配最近使用的命令，按↑可翻阅
 - autojump的跳转，j path 轻松愉悦
 - 好看啊！！！
@@ -47,13 +47,14 @@ zsh作为bash的替代工具，嗯，真香， 配合oh-my-zsh使用体验极佳
 #### 2.1 安装zsh
 
 1. 安装
-`sudo apt-get install zsh`
+    `sudo apt-get install zsh`
 2. 设置默认shell
-`chsh -s /bin/zsh`
-注意： 不要使用sudo
+    `chsh -s /bin/zsh`
+    注意： 不要使用sudo
 3. 配置密码文件，解决chsh:PAM认证失败的问题
-`sudo vim /etc/passwd`
-把第一行的root用户和最后的自己用户的/bin/bash改成/bin/zsh
+    `sudo vim /etc/passwd`
+    
+    把第一行的root用户和最后的自己用户的/bin/bash改成/bin/zsh
 
 #### 2.2 安装oh-my-zsh
 
@@ -63,6 +64,7 @@ zsh作为bash的替代工具，嗯，真香， 配合oh-my-zsh使用体验极佳
     `sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
 2. 安装autojump自动跳转插件
     `sudo apt-get install autojump`
+
     配置：
     ```
     vim .zshrc
@@ -74,11 +76,15 @@ zsh作为bash的替代工具，嗯，真香， 配合oh-my-zsh使用体验极佳
 ## 3. tmux
 
 没有tmux，服务不敢挂起，电脑不敢关机
+
 没有tmux，屏幕只敢独占，窗口常需切换
+
 一切都是没有tmux的错！
+
 ~~所以tmux偶尔难受的鼠标控制和剪贴板可以忍了~~
 
 因为可能在公司和宿舍切换，用tmux挂起可以放心的退出shell端
+
 分屏对于一边看代码一边看控制台输出方便很多
 
 #### 3.1 安装
