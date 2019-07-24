@@ -3,7 +3,7 @@
  * @Date: 2019-07-25 00:01:50
  * @github: https://github.com/sunyz
  * @LastEditors: sunyz
- * @LastEditTime: 2019-07-25 03:34:43
+ * @LastEditTime: 2019-07-25 03:38:18
  * @Description: content
  -->
 
@@ -48,11 +48,15 @@ zsh作为bash的替代工具，嗯，真香， 配合oh-my-zsh使用体验极佳
 ### 2.1 安装zsh
 
 1. 安装
+
     `sudo apt-get install zsh`
 2. 设置默认shell
+
     `chsh -s /bin/zsh`
+
     注意： 不要使用sudo
 3. 配置密码文件，解决chsh:PAM认证失败的问题
+
     `sudo vim /etc/passwd`
 
     把第一行的root用户和最后的自己用户的/bin/bash改成/bin/zsh
@@ -61,7 +65,8 @@ zsh作为bash的替代工具，嗯，真香， 配合oh-my-zsh使用体验极佳
 
 单单只有zsh仍然只是咸鱼，配合oh-my-zsh一键舒服起来
 
-1. 安装  
+1. 安装
+
     `sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
 2. 安装autojump自动跳转插件
 
@@ -111,4 +116,3 @@ cp .tmux/.tmux.conf.local .
 设置完三件套，之后就可以进入舒服的开发环境啦
 
 明天继续！
-[EOF]
