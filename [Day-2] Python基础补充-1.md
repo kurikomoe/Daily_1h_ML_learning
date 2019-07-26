@@ -3,11 +3,11 @@
  * @Date: 2019-07-25 23:53:02
  * @github: https://github.com/sunyz
  * @LastEditors: sunyz
- * @LastEditTime: 2019-07-26 02:25:48
+ * @LastEditTime: 2019-07-26 14:29:36
  * @Description: content
  -->
 
-# Day 2： Python基础补充
+# Day 2： Python基础补充-1
 
 虽然对Python有一定程度的掌握，也写过很多次爬虫，但确实没有系统的学习一遍python，心感仍有
 不足。所以趁此机会把一些python基础的东西过一遍，以廖雪峰的python博客
